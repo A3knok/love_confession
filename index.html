@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Confession Diagnosis</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <style>
+    /* 初期状態では全ての画面を非表示 */
+    #start-screen, #quiz-screen, #dialog-screen, #result-screen {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <header id="header">
+    <h1>Love Confession Diagnosis</h1>
+  </header>
+  
+  <main>
+    <div class="container">
+    <!--スタート画面-->
+      <section id="start-screen" class="section-container">
+        <div class="explanation-box">
+          <p>高校２年生のユウスケは同級生のヒメカを呼び出して愛の告白をします。<br>
+            このアプリでは頑張って告白しても<span class="spot-text">絶対</span>に振られます。<br>
+            <span class="spot-text">絶対</span>に付き合えません。<br>
+            それでは愛の告白頑張りましょう！
+          </p>
+        </div>
+        <button class="btn start-btn">告白する</button>       
+      </section>
+
+      <!--質問画面-->
+      <section id="quiz-screen" class="section-container">
+        <div class="dialog-wrapper">
+          <img class="himeka-img">
+          <div class="quiz-talk">
+            <h3 class="question-text"></h3>
+            <div class="options-container"><!--選択肢追加--></div>
+          </div>
+          
+        </div>        
+      </section>
+
+      <!--会話での結果画面-->
+      <section id="dialog-screen" class="section-container">
+        <div class="dialog-wrapper">
+          <img class="himeka-img">
+          <div class="quiz-talk">
+            <p class="before-dialog-text">
+              「ありがとう！そんな風に思ってたんだ！でもごめんね。私…。」
+            </p>
+            <p class="dialog-text"></p>
+          </div>
+          
+        </div>
+        
+      </section>
+
+      <!--結果画面-->
+      <section id="result-screen" class="section-container">
+        <h3 id="result-title"><!--診断結果のタイトル○○end--></h3>
+        <div class="result-wrapper">
+          <div class="img">
+            <img class="result-img">
+          </div>
+          <p class="result-description"><!--結果の詳細--></p>
+        </div>
+        <button class="btn restart-btn">もう一度告白する</button>
+      </section>
+    </div>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/gameLogic.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
