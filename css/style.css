@@ -30,25 +30,9 @@ body::before {
     radial-gradient(2px 2px at 160px 30px, rgba(255,255,255,0.5), transparent);
   background-repeat: repeat;
   background-size: 300px 200px;
-  animation: sparkle 4s linear infinite;
   pointer-events: none;
   opacity: 0.7;
   z-index: 1;
-}
-
-/* キラキラアニメーション（改良版） */
-@keyframes sparkle {
-  0% { 
-    transform: translateY(0px) translateX(0px);
-    opacity: 0.7;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% { 
-    transform: translateY(-200px) translateX(30px);
-    opacity: 0;
-  }
 }
 
 .btn {
@@ -474,6 +458,12 @@ body::before {
   }
 
   /*----question-screen----*/
+  .himeka-img {
+    width: 60vw;
+    height: 60vw;
+    margin: 0 auto 20px auto;
+  }
+
   .question-text {
     font-size: 1.6rem;
     margin-bottom: 20px;
@@ -523,8 +513,8 @@ body::before {
   }
 
   .img {
-    width: 75vw;
-    height: 75vw;
+    width: 60vw;
+    height: 60vw;
     max-width: 280px;
     max-height: 280px;
     margin: 0 auto 20px auto;

@@ -30,7 +30,7 @@ const results = {
     title: "友達End",
     dialogue: "ユウスケとは友達のままでいたい。",
     img: "assets/img/simple_end.png",
-    description: "友達ならまだチャンスあるし長期戦だ！"
+    description: "友達ならチャンスあるし長期戦だ！"
   },
   novel_end: {
     title: "森鴎外End",
