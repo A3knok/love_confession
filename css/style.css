@@ -80,13 +80,17 @@ body::before {
   overflow: hidden;
 }
 
-#header::after {
-  content: '💕';
+.s-with-heart {
+  position: relative;
+}
+
+.heart {
   position: absolute;
+  left: 100%; /* Sの右端から開始 */
   top: 50%;
-  right: 50px;
   transform: translateY(-50%);
   font-size: 3rem;
+  margin-left: 10px; /* 少し間隔をあける */
   animation: pulse 2s infinite;
 }
 
